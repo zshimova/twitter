@@ -2,7 +2,7 @@
   "name": "test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html"
@@ -14,6 +14,5 @@
     "@parcel/transformer-sass": "^2.6.2",
     "parcel": "^2.6.2",
     "parcel-transformer-hbs": "^1.0.4"
-  },
-  "extends": "@parcel/config-default"
+  }
 }
