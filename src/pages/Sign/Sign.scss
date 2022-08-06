@@ -1,15 +1,13 @@
 $color-background: #000;
-
+.s {}
 
 .sign {
     height: 100vh;
     background-color: $color-background;
-
     &__container {
-    display: flex;
-    height: 90vh;
+        display: flex;
+        height: 90vh;
     }
-
     &__img {
         display: flex;
         width: 50%;
@@ -19,32 +17,27 @@ $color-background: #000;
         background-size: cover;
         background-color: #fff;
     }
-
     &__content {
         width: 50%;
     }
-
     &__svg {
-
         &_primary {
             margin: auto;
             fill: #fff;
             height: 225px;
         }
-
         &_secondary {
             height: 35px;
             color: #fff;
         }
     }
-
     &__footer {
         display: flex;
         gap: 16px;
     }
-        &-link {
-            color: #fff;
-            font-size: 13px;
-            text-decoration: none;
-        }   
+    &-link {
+        color: #fff;
+        font-size: 13px;
+        text-decoration: none;
     }
+}
