@@ -533,42 +533,13 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"8lqZg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _styleScss = require("./pages/styles/style.scss");
 var _ = require("./pages/Sign/");
 var _Default = parcelHelpers.interopDefault(_);
 const root = document.getElementById("root");
 root.innerHTML = (0, _Default.default);
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./pages/Sign/":"fvwIm"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"fvwIm":[function(require,module,exports) {
+},{"./pages/Sign/":"fvwIm","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./pages/styles/style.scss":"bdIWy"}],"fvwIm":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _signScss = require("./Sign.scss");
@@ -589,25 +560,7 @@ const templateFunction = (0, _handlebarsDefault.default).template({
         ">= 4.3.0"
     ],
     "main": function(container, depth0, helpers, partials, data) {
-        var helper, lookupProperty = container.lookupProperty || function(parent, propertyName) {
-            if (Object.prototype.hasOwnProperty.call(parent, propertyName)) return parent[propertyName];
-            return undefined;
-        };
-        return '<div class="first">' + container.escapeExpression((helper = (helper = lookupProperty(helpers, "text") || (depth0 != null ? lookupProperty(depth0, "text") : depth0)) != null ? helper : container.hooks.helperMissing, typeof helper === "function" ? helper.call(depth0 != null ? depth0 : container.nullContext || {}, {
-            "name": "text",
-            "hash": {},
-            "data": data,
-            "loc": {
-                "start": {
-                    "line": 1,
-                    "column": 19
-                },
-                "end": {
-                    "line": 1,
-                    "column": 27
-                }
-            }
-        }) : helper)) + "/div>";
+        return '<div class="sign">\r\n\r\n    <div class="sign__container">\r\n        <div class="sign__img">\r\n            svg class="sign__svg"\r\n        </div>\r\n        <div class="sign__content"></div>\r\n    </div>\r\n\r\n    <footer class="sign__footer">\r\n        <a class="sign__footer-link" href="#" target="_blank">\u041E \u043D\u0430\u0441</a>\r\n        <a class="sign__footer-link" href="#" target="_blank">\u041E \u043D\u0430\u0441</a>\r\n        <a class="sign__footer-link" href="#" target="_blank">\u041E \u043D\u0430\u0441</a>\r\n        <a class="sign__footer-link" href="#" target="_blank">\u041E \u043D\u0430\u0441</a>\r\n        <a class="sign__footer-link" href="#" target="_blank">\u041E \u043D\u0430\u0441</a>\r\n        <a class="sign__footer-link" href="#" target="_blank">\u041E \u043D\u0430\u0441</a>\r\n        <a class="sign__footer-link" href="#" target="_blank">\u041E \u043D\u0430\u0441</a>\r\n        <a class="sign__footer-link" href="#" target="_blank">\u041E \u043D\u0430\u0441</a>\r\n        <a class="sign__footer-link" href="#" target="_blank">\u041E \u043D\u0430\u0441</a>\r\n        <a class="sign__footer-link" href="#" target="_blank">\u041E \u043D\u0430\u0441</a>\r\n    </footer>\r\n\r\n</div>\r\n';
     },
     "useData": true
 });
@@ -11931,6 +11884,36 @@ PrintVisitor.prototype.HashPair = function(pair) {
 },{"./visitor":"fk5sS"}],"jhUEF":[function(require,module,exports) {
 "use strict";
 
-},{}]},["ShInH","8lqZg"], "8lqZg", "parcelRequirefc40")
+},{}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"bdIWy":[function() {},{}]},["ShInH","8lqZg"], "8lqZg", "parcelRequirefc40")
 
 //# sourceMappingURL=index.975ef6c8.js.map

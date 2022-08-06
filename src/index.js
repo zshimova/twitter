@@ -1,3 +1,4 @@
+import './pages/styles/style.scss'
 import Sign from "./pages/Sign/";
 
 
